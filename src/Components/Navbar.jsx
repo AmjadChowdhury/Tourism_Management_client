@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+    
     const links = <>
         <NavLink to="/"><button className="btn bg-blue-500 text-white">Home</button></NavLink>
         <NavLink to="/alltouristsspot"><button className="btn bg-blue-500 text-white">All Tourists Spot</button></NavLink>
