@@ -13,6 +13,7 @@ import AuthProvider from './Provider/AuthProvider';
 import Register from './Components/Register';
 import Login from './Components/Login';
 import MyList from './Components/MyList';
+import EditTouristsSpot from './Components/EditTouristsSpot';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -42,6 +43,11 @@ const router = createBrowserRouter([
         path: "/mylist",
         element: <MyList></MyList>,
         loader: () => fetch('http://localhost:5000/spot')
+      },
+      {
+        path: "/spot/:id",
+        element: <EditTouristsSpot></EditTouristsSpot>,
+        loader: ({params}) => fetch(`http://localhost:5000/spot/${params.id}`)
       }
     ]
   },
