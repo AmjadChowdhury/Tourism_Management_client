@@ -5,6 +5,7 @@ const Navbar = () => {
         <NavLink to="/"><button className="btn bg-blue-500 text-white">Home</button></NavLink>
         <NavLink to="/alltouristsspot"><button className="btn bg-blue-500 text-white">All Tourists Spot</button></NavLink>
         <NavLink to="/addtouristsspot"><button className="btn bg-blue-500 text-white">Add Tourists spot</button></NavLink>
+        <NavLink to="/mylist"><button className="btn bg-blue-500 text-white">My List</button></NavLink>
     </>
         
     
