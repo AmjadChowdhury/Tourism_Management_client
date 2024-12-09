@@ -14,6 +14,7 @@ import Register from './Components/Register';
 import Login from './Components/Login';
 import MyList from './Components/MyList';
 import EditTouristsSpot from './Components/EditTouristsSpot';
+import ViewDetails from './Components/ViewDetails';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -47,6 +48,11 @@ const router = createBrowserRouter([
       {
         path: "/spot/:id",
         element: <EditTouristsSpot></EditTouristsSpot>,
+        loader: ({params}) => fetch(`http://localhost:5000/spot/${params.id}`)
+      },
+      {
+        path: "/details/:id",
+        element: <ViewDetails></ViewDetails>,
         loader: ({params}) => fetch(`http://localhost:5000/spot/${params.id}`)
       }
     ]

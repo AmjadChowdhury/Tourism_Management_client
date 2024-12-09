@@ -10,7 +10,8 @@ const MyList = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
             {
                 lists.map(list => <ListCard 
-                    key={list._id} 
+                    key={list._id}
+                    lists={lists} 
                     list={list}
                     setLists={setLists}></ListCard>)
             }
