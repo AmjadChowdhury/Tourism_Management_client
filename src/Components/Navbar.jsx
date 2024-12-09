@@ -1,15 +1,40 @@
-import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const Navbar = () => {
-    
-    const links = <>
-        <NavLink to="/"><button className="btn bg-blue-500 text-white">Home</button></NavLink>
-        <NavLink to="/alltouristsspot"><button className="btn bg-blue-500 text-white">All Tourists Spot</button></NavLink>
-        <NavLink to="/addtouristsspot"><button className="btn bg-blue-500 text-white">Add Tourists spot</button></NavLink>
-        <NavLink to="/mylist"><button className="btn bg-blue-500 text-white">My List</button></NavLink>
+  const { user,signOutUser } = useContext(AuthContext);
+
+  const handleSignOut = () => {
+    signOutUser()
+    .then(() => {
+      console.log("Sign Out Successfully")
+    })
+    .catch(error => {
+      console.log(error.message)
+    })
+  }
+  const links = (
+    <>
+      <NavLink to="/">
+        <button className="btn bg-blue-500 text-white">Home</button>
+      </NavLink>
+      <NavLink to="/alltouristsspot">
+        <button className="btn bg-blue-500 text-white">
+          All Tourists Spot
+        </button>
+      </NavLink>
+      <NavLink to="/addtouristsspot">
+        <button className="btn bg-blue-500 text-white">
+          Add Tourists spot
+        </button>
+      </NavLink>
+      <NavLink to="/mylist">
+        <button className="btn bg-blue-500 text-white">My List</button>
+      </NavLink>
     </>
-        
-    
+  );
+
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -40,12 +65,30 @@ const Navbar = () => {
         <a className="btn btn-ghost text-xl">Tourism Management</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          {links}
-        </ul>
+        <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Sign Up</a>
+        {user ? (
+          <div className="flex items-center">
+            <div className="dropdown dropdown-end">
+              <div
+                tabIndex={0}
+                role="button"
+                className="btn btn-ghost btn-circle avatar"
+              >
+                <div className="w-10 rounded-full">
+                  <img
+                    alt={user.displayName}
+                    src={user.photoURL}
+                  />
+                </div>
+              </div>
+            </div>
+            <Link onClick={handleSignOut} className="btn">Sign Out</Link>
+          </div>
+        ) : (
+          <Link to="/login" className="btn">LogIn</Link>
+        )}
       </div>
     </div>
   );
