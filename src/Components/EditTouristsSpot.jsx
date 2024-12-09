@@ -1,8 +1,10 @@
 import { useLoaderData } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const EditTouristsSpot = () => {
   const loadedSpot = useLoaderData();
   const {
+    _id,
     image,
     spotName,
     country,
@@ -18,8 +20,39 @@ const EditTouristsSpot = () => {
 
   const handleEditTouristsSpot = e => {
     e.preventDefault()
-    console.log(loadedSpot)
-    fetch(``)
+    const form = e.target
+    const image = form.image.value
+    const spotName = form.spotName.value
+    const country = form.country.value
+    const location = form.location.value
+    const description = form.description.value
+    const cost = form.cost.value
+    const season = form.season.value
+    const travelTime = form.travelTime.value
+    const visitor = form.visitor.value
+    const email = form.email.value
+    const name = form.name.value
+    const spot = {image,spotName,country,location,description,cost,season,travelTime,visitor,email,name}
+    console.log(spot)
+    fetch(`http://localhost:5000/spot/${_id}`,{
+        method: "PUT",
+        headers: {
+            'content-type': 'application/json'
+        },
+        body: JSON.stringify(spot)
+    })
+    .then(res => res.json())
+    .then(data => {
+        console.log(data)
+        if(data.modifiedCount>0){
+            Swal.fire({
+                title: 'Edit Done!',
+                text: `${name} complete your job successfully`,
+                icon: 'success',
+                confirmButtonText: 'Done'
+              })
+        }
+    })
   }
   return (
     <div>
