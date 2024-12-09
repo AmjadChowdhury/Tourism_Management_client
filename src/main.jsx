@@ -15,6 +15,7 @@ import Login from './Components/Login';
 import MyList from './Components/MyList';
 import EditTouristsSpot from './Components/EditTouristsSpot';
 import ViewDetails from './Components/ViewDetails';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,7 +31,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/addtouristsspot",
-        element: <AddTouristsSpot></AddTouristsSpot>
+        element: <PrivateRoute><AddTouristsSpot></AddTouristsSpot></PrivateRoute>
       },
       {
         path: "/register",
@@ -42,7 +43,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/mylist",
-        element: <MyList></MyList>,
+        element: <PrivateRoute><MyList></MyList></PrivateRoute>,
         loader: () => fetch('http://localhost:5000/spot')
       },
       {

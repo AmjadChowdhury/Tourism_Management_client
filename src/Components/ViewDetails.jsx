@@ -1,22 +1,26 @@
-import { useLoaderData } from "react-router-dom";
-
+import { useLoaderData, useNavigate } from "react-router-dom";
 
 const ViewDetails = () => {
-    const loadedDetails = useLoaderData()
-    const {
-        image,
-        spotName,
-        country,
-        location,
-        description,
-        cost,
-        season,
-        travelTime,
-        visitor,
-        name,
-      } = loadedDetails;
-    return (
-        <div className="card card-compact bg-base-100 w-3/4 m-auto shadow-xl">
+  const loadedDetails = useLoaderData();
+  const {
+    image,
+    spotName,
+    country,
+    location,
+    description,
+    cost,
+    season,
+    travelTime,
+    visitor,
+    name,
+  } = loadedDetails;
+
+  const navigate = useNavigate()
+  const handleback = () => {
+    navigate("/mylist")
+  }
+  return (
+    <div className="card card-compact bg-base-100 w-3/4 m-auto shadow-xl">
       <figure>
         <img src={image} alt="Shoes" />
       </figure>
@@ -51,8 +55,11 @@ const ViewDetails = () => {
           </div>
         </div>
       </div>
+      <div className="m-5 text-center">
+        <button onClick={handleback} className="btn bg-orange-700 text-white">Back</button>
+      </div>
     </div>
-    );
+  );
 };
 
 export default ViewDetails;

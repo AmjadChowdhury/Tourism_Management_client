@@ -1,10 +1,11 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 import Swal from "sweetalert2";
 
 const Login = () => {
     const {signInUser} = useContext(AuthContext)
+    const navigate = useNavigate()
     const handleLogin = e => {
         e.preventDefault()
         const form = e.target
@@ -20,11 +21,11 @@ const Login = () => {
                 icon: 'success',
                 confirmButtonText: 'Ok'
               })
+              navigate("/")
         })
         .catch(error => {
             console.log(error.message)
         })
-        
     }
     return (
         <div className="card bg-base-100 w-full md:w-2/5 m-auto shrink-0 shadow-2xl mt-5">

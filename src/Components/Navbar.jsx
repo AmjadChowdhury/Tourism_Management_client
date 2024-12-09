@@ -3,17 +3,17 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const Navbar = () => {
-  const { user,signOutUser } = useContext(AuthContext);
+  const { user, signOutUser } = useContext(AuthContext);
 
   const handleSignOut = () => {
     signOutUser()
-    .then(() => {
-      console.log("Sign Out Successfully")
-    })
-    .catch(error => {
-      console.log(error.message)
-    })
-  }
+      .then(() => {
+        console.log("Sign Out Successfully");
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
   const links = (
     <>
       <NavLink to="/">
@@ -24,14 +24,18 @@ const Navbar = () => {
           All Tourists Spot
         </button>
       </NavLink>
-      <NavLink to="/addtouristsspot">
-        <button className="btn bg-blue-500 text-white">
-          Add Tourists spot
-        </button>
-      </NavLink>
-      <NavLink to="/mylist">
-        <button className="btn bg-blue-500 text-white">My List</button>
-      </NavLink>
+      {user && (
+        <>
+          <NavLink to="/addtouristsspot">
+            <button className="btn bg-blue-500 text-white">
+              Add Tourists spot
+            </button>
+          </NavLink>
+          <NavLink to="/mylist">
+            <button className="btn bg-blue-500 text-white">My List</button>
+          </NavLink>
+        </>
+      )}
     </>
   );
 
@@ -77,17 +81,21 @@ const Navbar = () => {
                 className="btn btn-ghost btn-circle avatar"
               >
                 <div className="w-10 rounded-full">
-                  <img
-                    alt={user.displayName}
-                    src={user.photoURL}
-                  />
+                  <img alt={user.displayName} src={user.photoURL} />
                 </div>
               </div>
             </div>
-            <Link onClick={handleSignOut} className="btn bg-orange-700 text-white">Sign Out</Link>
+            <Link
+              onClick={handleSignOut}
+              className="btn bg-orange-700 text-white"
+            >
+              Sign Out
+            </Link>
           </div>
         ) : (
-          <Link to="/login" className="btn bg-blue-700 text-white">LogIn</Link>
+          <Link to="/login" className="btn bg-blue-700 text-white">
+            LogIn
+          </Link>
         )}
       </div>
     </div>
