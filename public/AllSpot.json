@@ -1,0 +1,219 @@
+[
+    {
+      "id": 1,
+      "zone": "Southeast Asia",
+      "countryName": "Bangladesh",
+      "popular_spot": ["Sundarban", "Cox’s Bazar", "Rangamati", "Bandarban", "Saint Martin’s Island"]
+    },
+    {
+      "id": 2,
+      "zone": "Southeast Asia",
+      "countryName": "Thailand",
+      "popular_spot": ["Bangkok", "Chiang Mai", "Ayutthaya", "Phuket", "Phi Phi Islands"]
+    },
+    {
+      "id": 3,
+      "zone": "Southeast Asia",
+      "countryName": "Indonesia",
+      "popular_spot": ["Bali", "Borobudur Temple", "Komodo National Park", "Raja Ampat Islands", "Yogyakarta"]
+    },
+    {
+      "id": 4,
+      "zone": "Southeast Asia",
+      "countryName": "Malaysia",
+      "popular_spot": ["Kuala Lumpur", "Langkawi", "Penang", "Cameron Highlands", "Taman Negara National Park"]
+    },
+    {
+      "id": 5,
+      "zone": "Southeast Asia",
+      "countryName": "Vietnam",
+      "popular_spot": ["Ha Long Bay", "Ho Chi Minh City", "Hoi An Ancient Town", "Phong Nha Caves", "Mekong Delta"]
+    },
+    {
+      "id": 6,
+      "zone": "Southeast Asia",
+      "countryName": "Cambodia",
+      "popular_spot": ["Angkor Wat", "Siem Reap", "Phnom Penh", "Kep", "Bokor National Park"]
+    },
+    {
+      "id": 7,
+      "zone": "Europe",
+      "countryName": "France",
+      "popular_spot": ["Paris", "Provence", "French Riviera", "Loire Valley"]
+    },
+    {
+      "id": 8,
+      "zone": "Europe",
+      "countryName": "Italy",
+      "popular_spot": ["Rome", "Venice", "Florence", "Amalfi Coast", "Tuscany"]
+    },
+    {
+      "id": 9,
+      "zone": "Europe",
+      "countryName": "Spain",
+      "popular_spot": ["Barcelona", "Madrid", "Seville", "Granada", "Ibiza"]
+    },
+    {
+      "id": 10,
+      "zone": "Europe",
+      "countryName": "England",
+      "popular_spot": ["London", "Bath", "Lake District", "Cambridge", "Oxford"]
+    },
+    {
+      "id": 11,
+      "zone": "Europe",
+      "countryName": "Netherlands",
+      "popular_spot": ["Amsterdam", "Rotterdam", "Keukenhof", "Giethoorn"]
+    },
+    {
+      "id": 12,
+      "zone": "Europe",
+      "countryName": "Switzerland",
+      "popular_spot": ["Zurich", "Geneva", "Interlaken", "Matterhorn", "Jungfrau"]
+    },
+    {
+      "id": 13,
+      "zone": "America",
+      "countryName": "United States of America",
+      "popular_spot": ["New York", "Grand Canyon", "Yellowstone", "Miami", "Los Angeles"]
+    },
+    {
+      "id": 14,
+      "zone": "America",
+      "countryName": "Canada",
+      "popular_spot": ["Banff National Park", "Toronto", "Vancouver", "Niagara Falls", "Quebec City"]
+    },
+    {
+      "id": 15,
+      "zone": "America",
+      "countryName": "Brazil",
+      "popular_spot": ["Rio de Janeiro", "Amazon Rainforest", "Iguazu Falls", "Salvador", "Brasília"]
+    },
+    {
+      "id": 16,
+      "zone": "America",
+      "countryName": "Argentina",
+      "popular_spot": ["Buenos Aires", "Patagonia", "Iguazu Falls", "Mendoza", "Bariloche"]
+    },
+    {
+      "id": 17,
+      "zone": "America",
+      "countryName": "Mexico",
+      "popular_spot": ["Cancun", "Mexico City", "Chichen Itza", "Tulum", "Oaxaca"]
+    },
+    {
+      "id": 18,
+      "zone": "America",
+      "countryName": "Peru",
+      "popular_spot": ["Machu Picchu", "Lima", "Sacred Valley", "Arequipa", "Lake Titicaca"]
+    },
+    {
+      "id": 19,
+      "zone": "Africa",
+      "countryName": "South Africa",
+      "popular_spot": ["Cape Town", "Kruger National Park", "Durban", "Garden Route"]
+    },
+    {
+      "id": 20,
+      "zone": "Africa",
+      "countryName": "Tanzania",
+      "popular_spot": ["Serengeti", "Zanzibar", "Mount Kilimanjaro", "Ngorongoro Crater"]
+    },
+    {
+      "id": 21,
+      "zone": "Africa",
+      "countryName": "Kenya",
+      "popular_spot": ["Masai Mara", "Nairobi", "Lake Nakuru", "Amboseli"]
+    },
+    {
+      "id": 22,
+      "zone": "Africa",
+      "countryName": "Morocco",
+      "popular_spot": ["Marrakesh", "Casablanca", "Sahara Desert", "Chefchaouen"]
+    },
+    {
+      "id": 23,
+      "zone": "Africa",
+      "countryName": "Egypt",
+      "popular_spot": ["Pyramids of Giza", "Luxor", "Aswan", "Alexandria"]
+    },
+    {
+      "id": 24,
+      "zone": "Africa",
+      "countryName": "Namibia",
+      "popular_spot": ["Etosha National Park", "Sossusvlei", "Swakopmund", "Fish River Canyon"]
+    },
+    {
+      "id": 25,
+      "zone": "Middle East",
+      "countryName": "Jordan",
+      "popular_spot": ["Petra", "Dead Sea", "Wadi Rum", "Amman"]
+    },
+    {
+      "id": 26,
+      "zone": "Middle East",
+      "countryName": "Saudi Arabia",
+      "popular_spot": ["Mecca", "Medina", "Riyadh", "AlUla"]
+    },
+    {
+      "id": 27,
+      "zone": "Middle East",
+      "countryName": "United Arab Emirates",
+      "popular_spot": ["Dubai", "Abu Dhabi", "Sharjah", "Fujairah"]
+    },
+    {
+      "id": 28,
+      "zone": "Middle East",
+      "countryName": "Iran",
+      "popular_spot": ["Tehran", "Isfahan", "Persepolis", "Shiraz"]
+    },
+    {
+      "id": 29,
+      "zone": "Middle East",
+      "countryName": "Qatar",
+      "popular_spot": ["Doha", "Al Zubarah", "The Pearl", "Souq Waqif"]
+    },
+    {
+      "id": 30,
+      "zone": "Middle East",
+      "countryName": "Kuwait",
+      "popular_spot": ["Kuwait City", "Failaka Island", "Al Hamra Tower", "Tareq Rajab Museum"]
+    },
+    {
+      "id": 31,
+      "zone": "Central Asia",
+      "countryName": "Uzbekistan",
+      "popular_spot": ["Samarkand", "Bukhara", "Tashkent", "Khiva"]
+    },
+    {
+      "id": 32,
+      "zone": "Central Asia",
+      "countryName": "Kyrgyzstan",
+      "popular_spot": ["Bishkek", "Issyk-Kul Lake", "Ala-Archa National Park", "Karakol"]
+    },
+    {
+      "id": 33,
+      "zone": "Central Asia",
+      "countryName": "Kazakhstan",
+      "popular_spot": ["Almaty", "Astana (Nur-Sultan)", "Charyn Canyon", "Baikonur"]
+    },
+    {
+      "id": 34,
+      "zone": "Central Asia",
+      "countryName": "Tajikistan",
+      "popular_spot": ["Pamir Mountains", "Dushanbe", "Iskanderkul Lake", "Wakhan Valley"]
+    },
+    {
+      "id": 35,
+      "zone": "Central Asia",
+      "countryName": "Turkmenistan",
+      "popular_spot": ["Ashgabat", "Darvaza Gas Crater", "Merv", "Yangykala Canyon"]
+    },
+    {
+      "id": 36,
+      "zone": "Central Asia",
+      "countryName": "Mongolia",
+      "popular_spot": ["Ulaanbaatar", "Gobi Desert", "Khövsgöl Lake", "Orkhon Valley"]
+    }
+  ]
+  

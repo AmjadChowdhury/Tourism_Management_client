@@ -27,7 +27,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/alltouristsspot",
-        element: <AllTouristsSpot></AllTouristsSpot>
+        element: <AllTouristsSpot></AllTouristsSpot>,
+        loader: () => fetch('AllSpot.json')
       },
       {
         path: "/addtouristsspot",
