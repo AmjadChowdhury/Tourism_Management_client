@@ -46,17 +46,17 @@ const router = createBrowserRouter([
       {
         path: "/mylist",
         element: <PrivateRoute><MyList></MyList></PrivateRoute>,
-        loader: () => fetch('http://localhost:5000/spot')
+        loader: () => fetch('https://tourism-management-server-bjez74end-amjads-projects-e3710c92.vercel.app/spot')
       },
       {
         path: "/spot/:id",
         element: <EditTouristsSpot></EditTouristsSpot>,
-        loader: ({params}) => fetch(`http://localhost:5000/spot/${params.id}`)
+        loader: ({params}) => fetch(`https://tourism-management-server-bjez74end-amjads-projects-e3710c92.vercel.app/spot/${params.id}`)
       },
       {
         path: "/details/:id",
         element: <ViewDetails></ViewDetails>,
-        loader: ({params}) => fetch(`http://localhost:5000/spot/${params.id}`)
+        loader: ({params}) => fetch(`https://tourism-management-server-bjez74end-amjads-projects-e3710c92.vercel.app/spot/${params.id}`)
       }
     ]
   },

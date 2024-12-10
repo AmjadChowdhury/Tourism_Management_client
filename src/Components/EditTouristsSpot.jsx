@@ -34,7 +34,7 @@ const EditTouristsSpot = () => {
     const name = form.name.value
     const spot = {image,spotName,country,location,description,cost,season,travelTime,visitor,email,name}
     console.log(spot)
-    fetch(`http://localhost:5000/spot/${_id}`,{
+    fetch(`https://tourism-management-server-bjez74end-amjads-projects-e3710c92.vercel.app/spot/${_id}`,{
         method: "PUT",
         headers: {
             'content-type': 'application/json'

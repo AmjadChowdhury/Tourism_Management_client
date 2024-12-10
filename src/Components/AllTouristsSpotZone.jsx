@@ -1,4 +1,4 @@
-
+import PropTypes from "prop-types";
 
 const AllTouristsSpotZone = ({spot}) => {
     console.log('hello form',spot)
@@ -17,5 +17,9 @@ const AllTouristsSpotZone = ({spot}) => {
         </div>
     );
 };
+
+AllTouristsSpotZone.propTypes = {
+    spot: PropTypes.object
+}
 
 export default AllTouristsSpotZone;

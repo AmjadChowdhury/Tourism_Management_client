@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
+import PropTypes from "prop-types";
 
 const ListCard = ({ lists, list, setLists }) => {
   const {
@@ -9,12 +10,7 @@ const ListCard = ({ lists, list, setLists }) => {
     country,
     location,
     description,
-    cost,
-    season,
-    travelTime,
-    visitor,
-    email,
-    name,
+    name
   } = list;
 
   const handleDelete = () => {
@@ -28,7 +24,7 @@ const ListCard = ({ lists, list, setLists }) => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/spot/${_id}`, {
+        fetch(`https://tourism-management-server-bjez74end-amjads-projects-e3710c92.vercel.app/spot/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -85,5 +81,11 @@ const ListCard = ({ lists, list, setLists }) => {
     </div>
   );
 };
+
+ListCard.propTypes = {
+  list: PropTypes.object,
+  setLists: PropTypes.func,
+  lists: PropTypes.object
+}
 
 export default ListCard;
