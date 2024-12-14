@@ -24,7 +24,7 @@ const ListCard = ({ lists, list, setLists }) => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://tourism-last-try-ovvr-r1w7cc2yn-amjads-projects-e3710c92.vercel.app/spot/${_id}`, {
+        fetch(`https://tourism-last-try-ovvr.vercel.app/spot/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
