@@ -1,4 +1,4 @@
 # Client Side
-# https://tourismmanagementclient.web.app/
+# https://tourismmanagementclient.web.app
 # Server Side
-# https://tourism-last-try-ovvr.vercel.app/
+# https://tourism-last-try-ovvr.vercel.app
