@@ -50,7 +50,7 @@ const AddTouristsSpot = () => {
         <span className="text-2xl text-blue-700 font-bold border-b-4 border-blue-950 rounded-l-lg rounded-r-lg">Fill up Tourists Spot</span>
       </div>
       <form onSubmit={handleAddTouristsSpot}>
-        <div className="flex justify-between gap-4">
+        <div className="md:flex justify-between gap-4">
           <div className="form-control w-full">
             <label className="label">
               <span className="label-text font-bold text-xl">Image</span>
@@ -77,7 +77,7 @@ const AddTouristsSpot = () => {
           </div>
         </div>
 
-        <div className="flex justify-between gap-4">
+        <div className="md:flex justify-between gap-4">
           <div className="form-control w-full">
             <label className="label">
               <span className="label-text font-bold text-xl">Country</span>
@@ -104,7 +104,7 @@ const AddTouristsSpot = () => {
           </div>
         </div>
 
-        <div className="flex justify-between gap-4">
+        <div className="md:flex justify-between gap-4">
           <div className="form-control w-full">
             <label className="label">
               <span className="label-text font-bold text-xl">Description</span>
@@ -131,7 +131,7 @@ const AddTouristsSpot = () => {
           </div>
         </div>
 
-        <div className="flex justify-between gap-4">
+        <div className="md:flex justify-between gap-4">
           <div className="form-control w-full">
             <label className="label">
               <span className="label-text font-bold text-xl">Season</span>
@@ -158,7 +158,7 @@ const AddTouristsSpot = () => {
           </div>
         </div>
 
-        <div className="flex justify-between gap-4">
+        <div className="md:flex justify-between gap-4">
           <div className="form-control w-full">
             <label className="label">
               <span className="label-text font-bold text-xl">Visitor</span>
@@ -186,7 +186,7 @@ const AddTouristsSpot = () => {
           </div>
         </div>
 
-        <div className="flex justify-between gap-4">
+        <div className="md:flex justify-between gap-4">
           <div className="form-control w-full">
             <label className="label">
               <span className="label-text font-bold text-xl">Name</span>

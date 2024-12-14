@@ -62,7 +62,7 @@ const EditTouristsSpot = () => {
         </span>
       </div>
       <form onSubmit={handleEditTouristsSpot}>
-        <div className="flex justify-between gap-4">
+        <div className="md:flex justify-between gap-4">
           <div className="form-control w-full">
             <label className="label">
               <span className="label-text font-bold text-xl">Image</span>
@@ -93,7 +93,7 @@ const EditTouristsSpot = () => {
           </div>
         </div>
 
-        <div className="flex justify-between gap-4">
+        <div className="md:flex justify-between gap-4">
           <div className="form-control w-full">
             <label className="label">
               <span className="label-text font-bold text-xl">Country</span>
@@ -122,7 +122,7 @@ const EditTouristsSpot = () => {
           </div>
         </div>
 
-        <div className="flex justify-between gap-4">
+        <div className="md:flex justify-between gap-4">
           <div className="form-control w-full">
             <label className="label">
               <span className="label-text font-bold text-xl">Description</span>
@@ -151,7 +151,7 @@ const EditTouristsSpot = () => {
           </div>
         </div>
 
-        <div className="flex justify-between gap-4">
+        <div className="md:flex justify-between gap-4">
           <div className="form-control w-full">
             <label className="label">
               <span className="label-text font-bold text-xl">Season</span>
@@ -180,7 +180,7 @@ const EditTouristsSpot = () => {
           </div>
         </div>
 
-        <div className="flex justify-between gap-4">
+        <div className="md:flex justify-between gap-4">
           <div className="form-control w-full">
             <label className="label">
               <span className="label-text font-bold text-xl">Visitor</span>
@@ -209,7 +209,7 @@ const EditTouristsSpot = () => {
           </div>
         </div>
 
-        <div className="flex justify-between gap-4">
+        <div className="md:flex justify-between gap-4">
           <div className="form-control w-full">
             <label className="label">
               <span className="label-text font-bold text-xl">Name</span>
