@@ -18,22 +18,22 @@ const Navbar = () => {
   const links = (
     <>
       <NavLink to="/">
-        <button className="btn bg-blue-500 text-white">Home</button>
+        <button className="btn bg-blue-500 text-white w-full">Home</button>
       </NavLink>
       <NavLink to="/alltouristsspot">
-        <button className="btn bg-blue-500 text-white">
+        <button className="btn bg-blue-500 text-white w-full">
           All Tourists Spot
         </button>
       </NavLink>
       {user && (
         <>
           <NavLink to="/addtouristsspot">
-            <button className="btn bg-blue-500 text-white">
+            <button className="btn bg-blue-500 text-white w-full">
               Add Tourists spot
             </button>
           </NavLink>
           <NavLink to="/mylist">
-            <button className="btn bg-blue-500 text-white">My List</button>
+            <button className="btn bg-blue-500 text-white w-full">My List</button>
           </NavLink>
         </>
       )}
@@ -67,7 +67,7 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost md:text-xl">Tourism Management</a>
+        <a className="btn btn-ghost text-xl">Tourism</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
