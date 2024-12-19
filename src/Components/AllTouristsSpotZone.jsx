@@ -9,7 +9,7 @@ const AllTouristsSpotZone = ({spot}) => {
             <h3 className="text-2xl font-bold text-center">{countryName}</h3>
             <div >
                 {
-                    popular_spot.map((pop,idx) => <button 
+                    popular_spot?.map((pop,idx) => <button 
                     key={idx}
                     className="btn m-2 bg-black text-white">{pop}</button>)
                 }

@@ -9,7 +9,7 @@ const MyList = () => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
             {
-                lists.map(list => <ListCard 
+                lists?.map(list => <ListCard 
                     key={list._id}
                     lists={lists} 
                     list={list}
